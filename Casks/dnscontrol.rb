@@ -3,7 +3,7 @@ cask "dnscontrol" do
   name "dnscontrol"
   desc "DNSControl: Infrastructure as Code for DNS Zones"
   homepage "https://docs.dnscontrol.org/"
-  version "4.36.0"
+  version "4.36.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,17 +13,17 @@ cask "dnscontrol" do
 
   on_macos do
     url "https://github.com/StackExchange/dnscontrol/releases/download/v#{version}/dnscontrol_#{version}_darwin_all.tar.gz"
-    sha256 "37ec00ed9c48396d6b6d3a6e8bbeb296d94d32089ab9106b7225773a3e65dc27"
+    sha256 "5649f47fcd0931332466e6978971497a33fa9e87461732931333d088179e38ca"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/StackExchange/dnscontrol/releases/download/v#{version}/dnscontrol_#{version}_linux_amd64.tar.gz"
-      sha256 "29cec0a8b00cda37149d5ee86d8da91b11f01b7e5f37ac06ae63c88b01f4071a"
+      sha256 "82a759ce702744e0588276f802a000b878a0c296ee70da333bd4392bed740523"
     end
     on_arm do
       url "https://github.com/StackExchange/dnscontrol/releases/download/v#{version}/dnscontrol_#{version}_linux_arm64.tar.gz"
-      sha256 "e53ca93dfcecf119919b7fa0d732071d497cf546a6df454b3263214ea0dfd0bc"
+      sha256 "baac802729fcf6ce56312a4bee82040fd146f27b4eebdf82fb99b612fea6e531"
     end
   end
 
